@@ -1,0 +1,37 @@
+Body {
+	background-color: RGB(255,253,99);
+}
+h1{
+	color: RGB(83,0,224); /*comentrio en css - color de la tipografia*/
+	font-family: Arial;
+	background-color: RGBA(83,240,94,0.4);
+	text-align: center;
+}
+
+.destacado{	
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+.nombre{
+	color: Black;
+}
+
+p{
+	color: RGB(172,105,121);
+}
+li{
+	color: blue;
+}
+.img{
+	text-align: center;
+	box-shadow: 1px 47px 27px 0px rgba(0,0,0,0.75);
+}
+.edad{
+	color: white;
+}
+.emprendimiento{
+	display: flex;
+	justify-content: center;
+	justify-content: space-evenly;
+}
