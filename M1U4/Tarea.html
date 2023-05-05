@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tarea</title>
+</head>
+<body>
+	<script>
+		const nombre = prompt('Ingrese nombre:', '');
+		const distancia = parseInt(prompt('Ingrese su distancia hasta el destino:', ''));
+		
+		if (Number.isNaN(distancia)) {
+			document.write(`La nota ingresada no es válida`);
+		} else if (distancia <=1000) {
+			document.write(`${nombre} puedes ir a pie`);
+		} else if (distancia <=10000) {
+			document.write(`${nombre}  debes ir en bicicleta`);
+		} else if (distancia <=30000) {
+			document.write(`${nombre} debes ir en colectivo`);
+		} else if (distancia <=100000) {
+			document.write(`${nombre} debes ir en auto`);
+		} else if (distancia >=100001) {
+			document.write(`${nombre} debes ir en avión`);
+		}
+	</script>
+</body>
+</html>
