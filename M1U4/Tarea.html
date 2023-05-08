@@ -10,7 +10,7 @@
 		const distancia = parseInt(prompt('Ingrese su distancia hasta el destino:', ''));
 		
 		if (Number.isNaN(distancia)) {
-			document.write(`La distancia ingresada no es válida`);
+			document.write(`La distancia ingresada debe ser numérica`);
 		} else if (distancia <=1000) {
 			document.write(`${nombre} puedes ir a pie`);
 		} else if (distancia <=10000) {
