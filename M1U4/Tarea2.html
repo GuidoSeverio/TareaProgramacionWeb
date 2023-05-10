@@ -5,12 +5,22 @@
 	<title>Tarea 2</title>
 </head>
 <body>
-	<script type="text/javascript">
-		const mensaje = 'hola, estoy dentro de un bucle'
+	<script>
+		const numero = 5; 
+		
+		let n = 1;
 
-		for(let i = 0; i < 5; i++){
-			alert(mal)
+		let mayor = 1
+
+		for (let n = 1; n < numero; n++) {
+		const valor = parseInt(prompt(`Ingrese el numero ${n}  de ${numero}:`))
+		if ( n > mayor) {
+			mayor = n;
+			}
 		}
-	</script>
+			
+		document.write(`El mayor de ${numero} es ${mayor}`)
+
+</script>
 </body>
 </html>
