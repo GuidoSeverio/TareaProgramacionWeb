@@ -5,22 +5,31 @@
 	<title>Tarea 2</title>
 </head>
 <body>
-	<script>
-		const numero = 5; 
-		
-		let n = 1;
+	<script> 
 
-		let mayor = 1
+        let array = [];
 
-		for (let n = 1; n < numero; n++) {
-		const valor = parseInt(prompt(`Ingrese el numero ${n}  de ${numero}:`))
-		if ( n > mayor) {
-			mayor = n;
-			}
-		}
-			
-		document.write(`El mayor de ${numero} es ${mayor}`)
+		const cuantos = 5;
 
-</script>
+        let mayor = 0;
+
+
+		while (array.length < cuantos) {
+
+			array[array.length] = parseInt(prompt(`Ingrese el valor ${array.length+1}  de ${cuantos}:`, ''));
+
+					}
+
+        for (var i=0; i < array.length; i++){
+
+            if(array[i]>mayor){
+
+                mayor = array[i];
+            }
+        }
+
+        document.write(mayor);
+
+    </script>
 </body>
 </html>
