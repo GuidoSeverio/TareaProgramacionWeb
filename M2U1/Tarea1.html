@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="Tarea1.css">
+	<title>Tarea 1</title>
+</head>
+<body>
+	<h1>Seleccion de fondo de color</h1>
+
+	<button onclick="cambiaColor('red')" class="rojo">Rojo</button>
+	<button onclick="cambiaColor('blue')" class="azul">Azul</button>
+	<button onclick="cambiaColor('green')" class="verde">Verde</button>
+
+	<script>
+
+	function cambiaColor(color) {
+        document.querySelector('body').style.background= color
+    }
+	</script>
+</body>
+</html>

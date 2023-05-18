@@ -1,0 +1,26 @@
+.rojo{
+	padding: 15px 20px;
+	background-color: #FF0000;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+}
+
+.azul{
+	padding: 15px 20px;
+	background-color: #0000FF;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+}
+
+.verde{
+	padding: 15px 20px;
+	background-color: #00FF00;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+}
