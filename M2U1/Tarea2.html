@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tarea 2</title>
+</head>
+<body>
+	<h1>Contador de caracteres</h1>
+	<div class="box">
+	<textarea id="mensaje" cols="30" rows="10"></textarea>
+	<div id="contador"></div>
+	</div>
+
+<script>
+	const mensaje = document.getElementById('mensaje');
+	const contador = document.getElementById('contador');
+
+	mensaje.addEventListener('input', function(e) {
+    const target = e.target;
+    const caracter = target.value.length;
+    contador.innerHTML = `La cantidad de caracteres es ${caracter}`;
+});
+</script>
+</body>
+</html>
