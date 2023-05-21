@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tarea</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+	<h1 style="text-align: center;">Bienvenidos</h1>
+	<ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Clientes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Nuestra historia</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Productos</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled">Contacto</a>
+  </li>
+</ul>
+  <div class="alert alert-success" role="alert" style="text-align: center;">
+  ¡OFERTA POR TIEMPO LIMITADO! 
+  <p><a href="#" style="color: red;">CLICK AQUÍ</a></p>
+</div>
+  <div class="container text-center">
+  <div class="row">
+    <div class="col" style= "background: yellow;">
+      Producto 1
+      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Ventajas
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Desventajas
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col" style="background: orangered;">
+      Producto 2
+      	 <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Ventajas
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Desventajas
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+	</div>
+</div>
+</div>
+   <div class="container text-center">
+  <div class="row align-items-center">
+    <div class="col">
+      <div class="card">
+  <img src="https://fakeimg.pl/600x400" class="card-img-top" alt="https://fakeimg.pl/600x400">
+
+  <div class="card-body">
+    <h5 class="card-title">Ubicación</h5>
+    <p class="card-text">Nos encontramos en Tal direccion, acerquese para mejor asesoramiento</p>
+  </div>
+</div>
+    </div>
+    <div class="col">
+     	<form action=""><div class="mb-3">
+     		<h2>Dejanos tu contacto y nos comunicaremos</h2>
+  <label for="exampleFormControlInput1" class="form-label">Nombre y apellido</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez">
+  <label for="exampleFormControlInput1" class="form-label">Numero de teléfono</label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cod de area (sin 0) - Numero (sin 15)">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+	<button type="button" class="btn btn-warning">ENVIAR</button>
+    </div>
+  </div>
+</div>
+</form>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
