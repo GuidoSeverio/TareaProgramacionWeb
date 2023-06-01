@@ -18,7 +18,7 @@
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                     Inicio
                 </a>
                 <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
@@ -28,27 +28,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a aria-current="page" class="nav-link active" href="#">
+                            <a aria-current="page" class="nav-link active" href="#modelo">
                                 Modelos
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#accesorios" role="button">
                                 Accesorios
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#cargadores">
                                         Cargadores
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="#auriculares">
                                         Auriculares
                                     </a>
                                 </li>
                                         <li>
-                                            <a class="dropdown-item" href="#">
+                                            <a class="dropdown-item" href="#contactanos">
                                                 PROMOS Y OFERTAS
                                             </a>
                                         </li>
@@ -57,12 +57,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a aria-current="page" class="nav-link active" href="#">
-                                Noticias
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a aria-current="page" class="nav-link active" href="#">
+                            <a aria-current="page" class="nav-link active" href="#visitanos">
                                 Nosotros
                             </a>
                         </li>
@@ -78,7 +73,7 @@
             </div>
         </nav>
         <div class="container-fluid">
-            <div class="row align-items-center hero" id="home">
+            <div class="row align-items-center hero scroll_section" id="home">
                 <div class="col-lg-3 offset-lg-2">
                     <p>
                         Bienvenidos!
@@ -92,8 +87,9 @@
                 </div>
             </div>
         </div>
-        <div class="row my-3">
+        <div class="row my-3 scroll_section" id="modelo">
             <div class="accordion accordion-flush col-md-5 offset-md-1 py-3" id="accordionFlushExample">
+                <div class="modelo">Modelos</div>
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button aria-controls="flush-collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#flush-collapseOne" data-bs-toggle="collapse" type="button">
@@ -224,7 +220,7 @@
         <div class="accesorios">
             Accesorios
         </div>
-        <div class="row my-5">
+        <div class="row my-5 acc scroll_section" id="auriculares">
         <div class="card col-md-5 my-3 offset-md-1" style="width: 18rem;">
   <img src="img/Airpods 2da gen.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -251,7 +247,7 @@
   </div>
 </div>
 </div>
-<div class="row my-3">
+<div class="row my-3 acc scroll_section"id="cargadores">
     <div class="card col-md-5 my-3 offset-md-3" style="width: 18rem;">
   <img src="img/fuente.jpg" class="card-img-top" alt="...">
   <div class="card-body">
@@ -269,7 +265,42 @@
   </div>
 </div>
 </div>
-<div class="ubicacion fw-bold">Ubicación <img src="img/222.png" class="position-relative top-00 start-45"> <p class="text-end">Nos podes encontrar en Centeno 342, entre Avenida San Martin y Juan B. Justo</p></div>
+<div class="row py-4 scroll_section" id="visitanos">
+    <div class="col-md-4 offset-md-1">
+        <h2>
+            Visitanos
+        </h2>
+        <div class="mapa">
+            <iframe allowfullscreen="" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.2528473025613!2d-64.30183162488552!3d-36.620299966776834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c2cd0f9eb8c39f%3A0xe885db1b85d3deaa!2sCenteno%20342%2C%20L6300DMH%20Santa%20Rosa%2C%20La%20Pampa!5e0!3m2!1ses!2sar!4v1685493941656!5m2!1ses!2sar" style="border:0;" width="600">
+            </iframe>
+            <h5>Centeno 342, entre San Martin y 9 de Julio</h5>
+        </div>
+    </div>
+    <div class="col-md-4 mt-4 mt-sm-0 offset-md-1 scroll_section" id="contactanos">
+        <h2>Contactanos</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="col-md-6">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido">
+            </div>
+            <div class="col-12">
+                <label for="tel" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="telefono" placeholder="Cod. de area (sin 0) - número de teléfono (sin 15)">
+            </div>
+            <div class="col-12">
+                <label for="mensaje" class="form-label">Consulta</label>
+                <textarea class="form-control" id="consulta" cols="30" rows="9"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="sumbit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
 
         <footer>
             <p class="text-center">

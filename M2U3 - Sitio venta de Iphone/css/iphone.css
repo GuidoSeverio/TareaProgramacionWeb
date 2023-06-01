@@ -4,18 +4,20 @@ font-family: 'Alfa Slab One', cursive;
 font-family: 'Open Sans', sans-serif;
 */
 
-body{
-	background-color: RGBA(0,0,154,0.4);
+html {
+    scroll-behavior: smooth;
+}
+.scroll_section{
+	scroll-margin-top: 60px;
+}
+body {
+    background-color: RGBA(0, 0, 154, 0.4);
 }
 footer {
     background-color: #aaaa;
 }
 h1, h2 {
     font-family: 'Alfa slab One' cursive;
-}
-
-.accordion{
-	background-color: RGBA(0,0,154,0.4);
 }
 .hero {
     background: url(../img/presentacion.png) no-repeat;
@@ -24,54 +26,60 @@ h1, h2 {
     min-height: 600px;
     color: white;
 }
-.manzana{
+.manzana {
     width: 50px;
     height: 50px;
 }
-
-.once{
-	width: 300px;
-	height: 300px;
+.modelo {
+    text-align: center;
+    font-family: 'Alfa slab One' cursive;
+    font-size: 30px;
+    font-style: italic;
+    background-color: RGBA(0, 0, 154, 0.4);
 }
-
-.doce{
-	width: 300px;
-	height: 200px;
+.once {
+    width: 300px;
+    height: 300px;
 }
-
-.trece{
-	width: 300px;
-	height: 200px;
+.doce {
+    width: 300px;
+    height: 200px;
 }
-
-.catorce{
-	width: 400px;
-	height: 300px;
+.trece {
+    width: 300px;
+    height: 200px;
 }
-
+.catorce {
+    width: 400px;
+    height: 300px;
+}
 .iphone {
-    background-color: RGBA(0,0,154,0.4);
+    background-color: RGBA(0, 0, 154, 0.4);
     padding-bottom: 4rem !important;
 }
-
-h5, p{
-	color: black;
-	font-size: 20px;
+h5, p {
+    color: black;
+    font-size: 20px;
 }
-
-.accesorios{
-	text-align: center;
-	color: white;
-	font-size: 40px;
-	font-family: 'Alfa slab One' cursive;
-	background-color: RGBA(0,0,154,0.4);
+.accesorios {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-family: 'Alfa slab One' cursive;
+    background-color: RGBA(0, 79, 80, 0.4);
 }
-
-.card-text{
-	font-size: 15px;
+.acc {
+    background-color: RGBA(0, 79, 80, 0.4);
 }
-.ubicacion{
-	font-family: 'Alfa slab One' cursive;
-	font-size: 30px;
-	text-align: justify;
+.card-text {
+    font-size: 15px;
+}
+.ubicacion {
+    font-family: 'Alfa slab One' cursive;
+    font-size: 30px;
+    text-align: justify;
+}
+.mapa iframe {
+    width: 100%;
+    aspect-ratio: 1.2;
 }
