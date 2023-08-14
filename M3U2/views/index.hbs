@@ -89,41 +89,19 @@
                     <div class="carousel slide" id="carouselExampleCaptions">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
+                            {{#each cliente}}
                                 <img class="d-block w-100" src="images/Persona1.jpg">
-                                    <div class="carousel-caption d-none d-md-block">
+                                    <div class="carousel-caption d-none d-md-block" id="{{id}}">
                                         <h5>
-                                            Mariano
+                                            {{nombre}}
                                         </h5>
                                         <p>
-                                            Super atentos y eficientes! muy recomendables!
+                                            {{comentario}}
                                         </p>
                                     </div>
                                 </img>
                             </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/Persona2.jpg">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>
-                                            Juan
-                                        </h5>
-                                        <p>
-                                            Muy buena atención! Se los recomiendo!
-                                        </p>
-                                    </div>
-                                </img>
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/Persona3.jpg">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h5>
-                                            Pablo
-                                        </h5>
-                                        <p>
-                                            Buenos precios y calidad!
-                                        </p>
-                                    </div>
-                                </img>
-                            </div>
+                            {{/each}}
                         </div>
                         <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
                             <span aria-hidden="true" class="carousel-control-prev-icon">
