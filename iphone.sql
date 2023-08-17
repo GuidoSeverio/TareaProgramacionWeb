@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-08-2023 a las 22:17:38
+-- Tiempo de generación: 17-08-2023 a las 21:30:42
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -41,6 +41,27 @@ INSERT INTO `clientes` (`id`, `nombre`, `comentario`) VALUES
 (1, 'Mariano', 'Super atentos y eficientes! Muy recomendables!'),
 (2, 'Juan', 'Muy buena atención! Se los recomiendo!'),
 (4, 'Dario', 'Muy amables y muy acertado el asesoramiento! Más que conforme!');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
+(1, 'guido', '81dc9bdb52d04dc20036dbd8313ed055'),
+(3, 'javier', '81dc9bdb52d04dc20036dbd8313ed055');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
