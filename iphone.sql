@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 17-08-2023 a las 21:30:42
+-- Tiempo de generación: 21-08-2023 a las 17:52:57
 -- Versión del servidor: 5.5.24-log
 -- Versión de PHP: 5.4.3
 
@@ -28,19 +28,21 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `clientes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `img_id` varchar(250) DEFAULT NULL,
   `nombre` varchar(250) NOT NULL,
   `comentario` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `clientes`
 --
 
-INSERT INTO `clientes` (`id`, `nombre`, `comentario`) VALUES
-(1, 'Mariano', 'Super atentos y eficientes! Muy recomendables!'),
-(2, 'Juan', 'Muy buena atención! Se los recomiendo!'),
-(4, 'Dario', 'Muy amables y muy acertado el asesoramiento! Más que conforme!');
+INSERT INTO `clientes` (`id`, `img_id`, `nombre`, `comentario`) VALUES
+(5, '', 'Dario', 'Muy recomendables!!'),
+(6, 'uera8hg8vlvsqsv9pkve', 'Gabriel', 'Buen asesoramiento y atención!!'),
+(7, 'zjil9z8up0nacufuqe9z', 'Carlos', 'Muy predispuestos para explicar los pro y los contra de cada celular. Más que conforme!!'),
+(9, 'gabljk1vtevewn9cvkpt', 'Gerardo', 'Buenos precios y calidad!');
 
 -- --------------------------------------------------------
 
