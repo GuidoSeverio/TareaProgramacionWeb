@@ -83,3 +83,8 @@ h5, p {
     width: 100%;
     aspect-ratio: 1.2;
 }
+
+.comcliente{
+    color: RGB(154,98,201);
+    text-shadow: 1px 1px 0px rgba(0,0,0,1);
+}
