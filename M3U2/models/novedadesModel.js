@@ -39,4 +39,10 @@ async function modificarClienteById(obj, id){
 	}
 }
 
-module.exports = { getClientes, deleteClienteById, insertCliente, getClienteById, modificarClienteById }
+async function buscarNovedades(busqueda) {
+	var query = "select * from clientes where nombre like ? OR comentario like ? ";
+	var rows = await pool.query(query, ['%' + busqueda + '%', '%' + busqueda + '%']);
+	return rows;
+}
+
+module.exports = { getClientes, deleteClienteById, insertCliente, getClienteById, modificarClienteById, buscarNovedades }
